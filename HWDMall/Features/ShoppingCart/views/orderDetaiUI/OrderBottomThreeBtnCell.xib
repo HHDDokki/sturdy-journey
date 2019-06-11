@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" indentationWidth="10" rowHeight="139" id="KGk-i7-Jjw" customClass="OrderBottomThreeBtnCell">
+            <rect key="frame" x="0.0" y="0.0" width="406" height="139"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="406" height="138.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qeS-Ma-jyl">
+                        <rect key="frame" x="192" y="53" width="82" height="32.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <inset key="contentEdgeInsets" minX="14" minY="8" maxX="14" maxY="8"/>
+                        <state key="normal" title="取消订单">
+                            <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="byR-zG-dc1">
+                        <rect key="frame" x="102" y="53" width="82" height="32.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <inset key="contentEdgeInsets" minX="14" minY="8" maxX="14" maxY="8"/>
+                        <state key="normal" title="联系客服">
+                            <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="deviceRGB"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ndm-Jy-Oj4">
+                        <rect key="frame" x="282" y="53.5" width="108" height="32"/>
+                        <color key="backgroundColor" red="0.92941176469999998" green="0.36862745099999999" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <inset key="contentEdgeInsets" minX="14" minY="8" maxX="14" maxY="8"/>
+                        <state key="normal" title="邀请好友拼单">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Ndm-Jy-Oj4" secondAttribute="trailing" constant="16" id="HIq-Uy-WRb"/>
+                    <constraint firstItem="Ndm-Jy-Oj4" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="JUW-VA-yKo"/>
+                    <constraint firstItem="Ndm-Jy-Oj4" firstAttribute="leading" secondItem="qeS-Ma-jyl" secondAttribute="trailing" constant="8" id="RD8-11-b6Q"/>
+                    <constraint firstItem="qeS-Ma-jyl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="192" id="UMZ-El-Mg6"/>
+                    <constraint firstItem="qeS-Ma-jyl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="42" id="aqJ-Fb-bRn"/>
+                    <constraint firstItem="qeS-Ma-jyl" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="k1m-rs-Utc"/>
+                    <constraint firstItem="qeS-Ma-jyl" firstAttribute="leading" secondItem="byR-zG-dc1" secondAttribute="trailing" constant="8" id="lTk-fN-ROt"/>
+                    <constraint firstItem="qeS-Ma-jyl" firstAttribute="top" secondItem="byR-zG-dc1" secondAttribute="top" id="mbJ-FO-VDU"/>
+                    <constraint firstItem="qeS-Ma-jyl" firstAttribute="baseline" secondItem="byR-zG-dc1" secondAttribute="firstBaseline" id="tsF-Zc-cq9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="leftBtn" destination="byR-zG-dc1" id="fpU-tw-5Yy"/>
+                <outlet property="midBtn" destination="qeS-Ma-jyl" id="eW5-yx-1hS"/>
+                <outlet property="rightBtn" destination="Ndm-Jy-Oj4" id="Kxp-M2-iNM"/>
+            </connections>
+            <point key="canvasLocation" x="72" y="197.45127436281859"/>
+        </tableViewCell>
+    </objects>
+</document>

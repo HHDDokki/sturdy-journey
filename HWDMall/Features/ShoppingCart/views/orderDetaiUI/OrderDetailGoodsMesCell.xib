@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" indentationWidth="10" rowHeight="130" id="KGk-i7-Jjw" customClass="OrderDetailGoodsMesCell">
+            <rect key="frame" x="0.0" y="0.0" width="379" height="130"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="379" height="129.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pYE-WW-zM2">
+                        <rect key="frame" x="17" y="33" width="70" height="64"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="64" id="p7e-m3-FSD"/>
+                            <constraint firstAttribute="width" constant="70" id="rEC-gN-ZDz"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="小米(MI)小爱音箱mini白色 智能音" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PKT-r8-hSl">
+                        <rect key="frame" x="100" y="14" width="172.5" height="31.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="deviceRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥148.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HAz-Qv-hXG">
+                        <rect key="frame" x="309.5" y="16" width="53.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="deviceRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="x 1" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ku-tb-11C">
+                        <rect key="frame" x="342.5" y="37" width="20.5" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="退款成功" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0jQ-93-peP">
+                        <rect key="frame" x="313.5" y="101" width="49.5" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.92941176470588238" green="0.36862745098039218" blue="0.23137254901960785" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="商品规格" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bjl-wd-cON">
+                        <rect key="frame" x="100" y="101" width="49.5" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="deviceRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="0jQ-93-peP" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="bjl-wd-cON" secondAttribute="trailing" constant="20" id="2Hx-PG-viA"/>
+                    <constraint firstAttribute="trailing" secondItem="HAz-Qv-hXG" secondAttribute="trailing" constant="16" id="2ix-k7-O1h"/>
+                    <constraint firstAttribute="trailing" secondItem="0jQ-93-peP" secondAttribute="trailing" constant="16" id="4jF-Sb-Ocm"/>
+                    <constraint firstItem="6ku-tb-11C" firstAttribute="top" secondItem="HAz-Qv-hXG" secondAttribute="bottom" constant="4" id="7fZ-17-aOo"/>
+                    <constraint firstItem="pYE-WW-zM2" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="9NO-Kt-veE"/>
+                    <constraint firstItem="pYE-WW-zM2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="17" id="Oes-BO-njp"/>
+                    <constraint firstAttribute="trailing" secondItem="6ku-tb-11C" secondAttribute="trailing" constant="16" id="anc-mr-17M"/>
+                    <constraint firstAttribute="bottom" secondItem="0jQ-93-peP" secondAttribute="bottom" constant="14" id="b2W-oM-x28"/>
+                    <constraint firstItem="PKT-r8-hSl" firstAttribute="leading" secondItem="pYE-WW-zM2" secondAttribute="trailing" constant="13" id="cRG-K3-3S2"/>
+                    <constraint firstItem="bjl-wd-cON" firstAttribute="leading" secondItem="pYE-WW-zM2" secondAttribute="trailing" constant="13" id="cns-mQ-aMw"/>
+                    <constraint firstItem="HAz-Qv-hXG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="oPO-fW-sbJ"/>
+                    <constraint firstItem="PKT-r8-hSl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="pBu-JL-tX7"/>
+                    <constraint firstItem="HAz-Qv-hXG" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="PKT-r8-hSl" secondAttribute="trailing" constant="35" id="tQf-5x-WYR"/>
+                    <constraint firstAttribute="bottom" secondItem="bjl-wd-cON" secondAttribute="bottom" constant="14" id="wkl-3h-dfO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="goodsCount" destination="6ku-tb-11C" id="52u-ZK-YQT"/>
+                <outlet property="goodsGuige" destination="bjl-wd-cON" id="fas-Wg-ZlQ"/>
+                <outlet property="goodsImage" destination="pYE-WW-zM2" id="Gql-sZ-kpC"/>
+                <outlet property="goodsName" destination="PKT-r8-hSl" id="l92-VY-h50"/>
+                <outlet property="goodsPrice" destination="HAz-Qv-hXG" id="YbH-D2-Ftf"/>
+                <outlet property="tuikuan" destination="0jQ-93-peP" id="Hjz-SM-obg"/>
+            </connections>
+            <point key="canvasLocation" x="90.400000000000006" y="193.4032983508246"/>
+        </tableViewCell>
+    </objects>
+</document>

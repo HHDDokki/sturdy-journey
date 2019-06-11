@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="94" id="KGk-i7-Jjw" customClass="ConfirmOrderTopCell">
+            <rect key="frame" x="0.0" y="0.0" width="369" height="94"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="369" height="93.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="order_icon_location_normal" translatesAutoresizingMaskIntoConstraints="NO" id="hKd-nA-3X8">
+                        <rect key="frame" x="16" y="36" width="22" height="22"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请选择收货地址" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O23-e2-QcI">
+                        <rect key="frame" x="43" y="38" width="107.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="details_nav_icon_jump_normal 拷贝" translatesAutoresizingMaskIntoConstraints="NO" id="UB1-sH-NAl">
+                        <rect key="frame" x="341" y="41" width="12" height="12"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="order_image_line_normal" translatesAutoresizingMaskIntoConstraints="NO" id="fWC-co-OgK" customClass="order_image_line_normal" customModule="HWDMall" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="89" width="369" height="5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="5" id="SWR-jV-gfm"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="UB1-sH-NAl" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="O23-e2-QcI" secondAttribute="trailing" constant="5" id="0ZQ-FB-sT9"/>
+                    <constraint firstItem="UB1-sH-NAl" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="2Cs-iE-JPb"/>
+                    <constraint firstItem="fWC-co-OgK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="3TH-l5-H2c"/>
+                    <constraint firstAttribute="bottom" secondItem="fWC-co-OgK" secondAttribute="bottom" constant="-0.5" id="DQ3-kM-glV"/>
+                    <constraint firstItem="hKd-nA-3X8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="EGR-iw-uc1"/>
+                    <constraint firstItem="O23-e2-QcI" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Eb8-Ud-F61"/>
+                    <constraint firstItem="O23-e2-QcI" firstAttribute="leading" secondItem="hKd-nA-3X8" secondAttribute="trailing" constant="5" id="GkX-Xf-Q1V"/>
+                    <constraint firstAttribute="trailing" secondItem="fWC-co-OgK" secondAttribute="trailing" id="Ni0-fa-Hw0"/>
+                    <constraint firstAttribute="trailing" secondItem="UB1-sH-NAl" secondAttribute="trailing" constant="16" id="dYT-Kq-uCa"/>
+                    <constraint firstItem="hKd-nA-3X8" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="vA1-H5-Fwh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="-7.2000000000000002" y="128.63568215892056"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="details_nav_icon_jump_normal 拷贝" width="12" height="12"/>
+        <image name="order_icon_location_normal" width="22" height="22"/>
+        <image name="order_image_line_normal" width="375" height="5"/>
+    </resources>
+</document>

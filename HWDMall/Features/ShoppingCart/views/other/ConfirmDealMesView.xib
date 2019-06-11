@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ConfirmDealMesView">
+            <rect key="frame" x="0.0" y="0.0" width="464" height="284"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="好货多-订单编号15646-8138486536" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2fh-iL-LDI">
+                    <rect key="frame" x="17" y="16" width="207.5" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="deviceRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dpl-3u-THD">
+                    <rect key="frame" x="183.5" y="186" width="97.5" height="33"/>
+                    <attributedString key="attributedText">
+                        <fragment content="¥">
+                            <attributes>
+                                <color key="NSColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="deviceRGB"/>
+                                <font key="NSFont" size="18" name=".SFNSDisplay"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="8299">
+                            <attributes>
+                                <color key="NSColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="deviceRGB"/>
+                                <font key="NSFont" size="28" name=".SFNSDisplay"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=".00">
+                            <attributes>
+                                <color key="NSColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="deviceRGB"/>
+                                <font key="NSFont" size="18" name=".SFNSDisplay"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="收款方" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dhQ-Sf-if4">
+                    <rect key="frame" x="17" y="247" width="46" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="deviceRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pzl-tC-CGA">
+                    <rect key="frame" x="16" y="278" width="432" height="1"/>
+                    <color key="backgroundColor" red="0.77647058823529413" green="0.77647058823529413" blue="0.77647058823529413" alpha="1" colorSpace="deviceRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="mKy-we-4ku"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="好货多平台商户" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cGc-Hf-F2c">
+                    <rect key="frame" x="339" y="247" width="108" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="deviceRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Pzl-tC-CGA" firstAttribute="top" secondItem="dhQ-Sf-if4" secondAttribute="bottom" constant="13" id="427-VD-UhY"/>
+                <constraint firstItem="dpl-3u-THD" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="8Me-vX-65x"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Pzl-tC-CGA" secondAttribute="trailing" constant="16" id="8nd-Q0-Mgi"/>
+                <constraint firstItem="2fh-iL-LDI" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="17" id="How-2N-ke0"/>
+                <constraint firstItem="dhQ-Sf-if4" firstAttribute="top" secondItem="dpl-3u-THD" secondAttribute="bottom" constant="28" id="SZz-Mc-TvU"/>
+                <constraint firstItem="2fh-iL-LDI" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="16" id="StJ-sD-mzP"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="cGc-Hf-F2c" secondAttribute="trailing" constant="17" id="cEe-Qs-rwU"/>
+                <constraint firstItem="dhQ-Sf-if4" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="17" id="k0O-ww-NVg"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="2fh-iL-LDI" secondAttribute="trailing" constant="17" id="oUC-cd-fzN"/>
+                <constraint firstItem="Pzl-tC-CGA" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="obk-CO-0dZ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Pzl-tC-CGA" secondAttribute="bottom" constant="5" id="rH6-rp-sbh"/>
+                <constraint firstItem="Pzl-tC-CGA" firstAttribute="top" secondItem="cGc-Hf-F2c" secondAttribute="bottom" constant="13" id="wix-gw-dPG"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-48" y="-29.685157421289357"/>
+        </view>
+    </objects>
+</document>

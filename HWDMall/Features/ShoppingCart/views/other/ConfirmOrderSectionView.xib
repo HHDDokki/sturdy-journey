@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB" customClass="ConfirmOrderSectionView">
+            <rect key="frame" x="0.0" y="0.0" width="417" height="180"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="order_icon_shop_normal" translatesAutoresizingMaskIntoConstraints="NO" id="dNq-p8-F2D">
+                    <rect key="frame" x="16" y="79" width="22" height="22"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="文君数据" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XOU-G4-Zhr">
+                    <rect key="frame" x="43" y="81" width="354" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="dNq-p8-F2D" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="61H-CB-a8F"/>
+                <constraint firstItem="dNq-p8-F2D" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="BC5-va-UJI"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="XOU-G4-Zhr" secondAttribute="trailing" constant="20" id="ES3-HS-7mG"/>
+                <constraint firstItem="XOU-G4-Zhr" firstAttribute="centerY" secondItem="dNq-p8-F2D" secondAttribute="centerY" id="HFL-by-ciD"/>
+                <constraint firstItem="XOU-G4-Zhr" firstAttribute="leading" secondItem="dNq-p8-F2D" secondAttribute="trailing" constant="5" id="Y2p-w6-Q7m"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="shopnameLbl" destination="XOU-G4-Zhr" id="6ba-ii-1te"/>
+            </connections>
+            <point key="canvasLocation" x="112.8" y="91.754122938530742"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="order_icon_shop_normal" width="22.5" height="22"/>
+    </resources>
+</document>

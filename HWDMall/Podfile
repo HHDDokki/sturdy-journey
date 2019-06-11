@@ -1,0 +1,38 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'HWDMall' do
+    inhibit_all_warnings!
+    
+    pod 'LYEmptyView' # 无网络、无数据占位图
+    pod 'Masonry'     #l-delete
+    pod 'AFNetworking’, '~> 3.1.0'   #l-delete
+    pod 'MJRefresh' #l-delete
+    pod 'SDWebImage'   #l-delete
+    pod 'IQKeyboardManager'  
+    pod 'MBProgressHUD'   #l-delete
+    pod 'ReactiveObjC'  
+    pod 'FMDB’,’2.5’ #l-delete
+    pod 'JSONModel' 
+    pod 'OYCountDownManager' #cell倒计时优化  
+    pod 'YYKit'  #l-delete
+    pod 'WechatOpenSDK'
+    pod 'MJExtension', '~> 3.0.15.1'   
+    pod 'WMPageController' , '2.5.2'
+    pod 'HMSegmentedControl'  
+    pod 'UMCCommon'
+    pod 'UMCSecurityPlugins'
+    pod 'UMCAnalytics'
+
+
+  target 'HWDMallTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'HWDMallUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

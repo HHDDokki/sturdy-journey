@@ -1,0 +1,50 @@
+//
+//  PrefixHeader.pch
+//  HWDMall
+//
+//  Created by stewedr on 2018/10/16.
+//  Copyright © 2018 stewardR. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import <UIKit/UIKit.h>
+#import <Masonry.h>
+#import <LYEmptyView/LYEmptyViewHeader.h> // 无数据占位图
+#import "CYLTabBarController.h"
+#import "Config.h"  // 全局变量
+#import "ThirdMacros.h" //宏
+#import <WXApi.h> // 微信api
+#import "Macros.h"
+#import "ApiHeader.h"
+#import "MBProgressHUD.h"
+#import "MBProgressHUD+MP.h"
+#import "JSONModel+Extension.h"
+#import "UIColor+HEX.h"
+#import "MBProgressHUD+MP.h"
+#import "UIView+Toast.h"
+#import "UIView+Gradient.h" // 颜色渐变
+#import "UIBezierPath+CutCorners.h" //切圆角+切圆
+#import <OYCountDownManager.h> // 倒计时管理
+#import "HHDCountDownManager.h" // 倒计时管理2
+#import "TimedownModel.h" // 倒计时模型
+
+#import <MJExtension/MJExtension.h>
+#import <MJRefresh/MJRefresh.h>
+#import "UIView+Frame.h"
+#import "UILabel+AutoSize.h"
+#import "WebServiceTool.h" // 网络请求工具类
+#import "ToolsManage.h" 
+#import <ReactiveObjC/ReactiveObjC.h>
+#import "NSString+Common.h"
+#import "UIView+Visuals.h"
+//#import <SDWebImage/UIImageView+WebCache.h>
+//#import <SDWebImage/NSButton+WebCache.h>
+#import <AlipaySDK/AlipaySDK.h>//支付宝
+#import "ShareTools.h"//分享小程序tool
+#import "HHDCommonUtil.h"//工具类
+#import "NSLayoutConstraint+IBDesignable.h"
+#import "UIButton+touch.h" // 
+#import "AppDelegate.h"
+#endif /* PrefixHeader_pch */

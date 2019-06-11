@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" indentationWidth="10" rowHeight="110" id="KGk-i7-Jjw" customClass="ConfirmOrderBottomCell">
+            <rect key="frame" x="0.0" y="0.0" width="356" height="110"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="356" height="109.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="金豆" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UDi-I5-Lk5">
+                        <rect key="frame" x="17" y="46" width="31" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="共1015，可抵 ¥10.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X3V-Nn-r5K">
+                        <rect key="frame" x="70" y="46.5" width="135.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="06m-nm-hqG" customClass="KLSwitch">
+                        <rect key="frame" x="302" y="44" width="38" height="22"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="YAb-Vw-z8e"/>
+                            <constraint firstAttribute="width" constant="38" id="oIm-Hm-PGX"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yjf-A4-ghU">
+                        <rect key="frame" x="213" y="40" width="46" height="30"/>
+                        <state key="normal">
+                            <attributedString key="attributedTitle">
+                                <fragment content="充值">
+                                    <attributes>
+                                        <color key="NSColor" red="0.92941176469999998" green="0.36862745099999999" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <font key="NSFont" metaFont="system" size="14"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="X3V-Nn-r5K" firstAttribute="leading" secondItem="UDi-I5-Lk5" secondAttribute="trailing" constant="22" id="4sZ-7s-ibZ"/>
+                    <constraint firstItem="X3V-Nn-r5K" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="696-7f-9e5"/>
+                    <constraint firstAttribute="trailing" secondItem="06m-nm-hqG" secondAttribute="trailing" constant="16" id="Ir8-mC-S5t"/>
+                    <constraint firstItem="06m-nm-hqG" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Oor-n4-ddw"/>
+                    <constraint firstItem="UDi-I5-Lk5" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="g7J-o5-V8O"/>
+                    <constraint firstItem="Yjf-A4-ghU" firstAttribute="leading" secondItem="X3V-Nn-r5K" secondAttribute="trailing" constant="7.5" id="mSy-69-42x"/>
+                    <constraint firstItem="UDi-I5-Lk5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="17" id="rGV-NS-RFk"/>
+                    <constraint firstItem="Yjf-A4-ghU" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="sDI-L1-mfC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="celltitle" destination="UDi-I5-Lk5" id="3o3-6D-eRn"/>
+                <outlet property="rechargeBtn" destination="Yjf-A4-ghU" id="fK1-7e-lWA"/>
+                <outlet property="useCoinSwitch" destination="06m-nm-hqG" id="sz1-wJ-J6H"/>
+                <outlet property="useContent" destination="X3V-Nn-r5K" id="6xn-Xi-yXL"/>
+            </connections>
+            <point key="canvasLocation" x="108.8" y="184.40779610194903"/>
+        </tableViewCell>
+    </objects>
+</document>
